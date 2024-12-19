@@ -26,6 +26,43 @@ if (orderItem == 1) {
 // Step 3 - Subtype choice
 // Your code goes here
 
+if (orderItem == 1) {
+  let pizzaType = prompt(
+    `Which pizza do you wish to order today? Type the number that you'd like to order: 1/ Margarita, 2/ Peperoni, 3/ Potato`
+  );
+  if (pizzaType == 1) {
+    alert("Margarita is a great choice!");
+  } else if (pizzaType == 2) {
+    alert("Peperoni is a great choice!");
+  } else {
+    alert("Potato is a great choice!");
+  }
+} else if (orderItem == 2) {
+  let pastaType = prompt(
+    `Which pasta do you wish to order today? Type the number that you'd like to order: 1/ Cacio e Pepe, 2/ Carbonara, 3/ Tomato`
+  );
+
+  if (pastaType == 1) {
+    alert("Cacio e Pepe is a great choice!");
+  } else if (pastaType == 2) {
+    alert("Carbonara is a great choice!");
+  } else {
+    alert("Tomoato is a great choice!");
+  }
+} else {
+  let saladType = prompt(
+    `Which salad do you wish to order today? Type the number that you'd like to order: 1/ Greek, 2/ Caesar, 3/ Green`
+  );
+
+  if (saladType == 1) {
+    alert("Greek is a great choice!");
+  } else if (saladType == 2) {
+    alert("Caesar is a great choice!");
+  } else {
+    alert("Green is a great choice!");
+  }
+}
+
 // Step 4 - Age
 // Your code goes here
 
