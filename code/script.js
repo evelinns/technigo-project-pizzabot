@@ -66,5 +66,14 @@ if (orderItem == 1) {
 // Step 4 - Age
 // Your code goes here
 
+let age = prompt("What's your age? Please type it in the box:");
+
+if (age < 18) {
+  alert(`The order is for a child, your total for today will be $10.`);
+} else {
+  alert(`The order is for an adult, your total for today will be $18.`);
+}
+
 // Step 5 - Order confirmation
 // Your code goes here
+alert("Order is submitted, please wait 15min for us to prepare your order");
