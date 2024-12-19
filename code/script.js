@@ -12,55 +12,72 @@ alert(`Hi and welcome, ${userName}!`);
 // Step 2 - Food choice
 // Your code goes here
 const orderItem = prompt(
-  "What would you like to order today? Type the corresponding number for your order: 1/ Pizza, 2/ Pasta, 3/ Salad"
+  `What would you like to order today? \n\nType the corresponding number for your order: \n\n1/ Pizza\n2/ Pasta\n3/ Salad\n\n`
 );
 
+let item;
+
 if (orderItem == 1) {
-  alert(`Pizza is a great choice!`);
+  item = "Pizza";
 } else if (orderItem == 2) {
-  alert(`Pasta is a great choice!`);
+  item = "Pasta";
 } else {
-  alert(`Salad is a great choice!`);
+  item = "Salad";
 }
+
+alert(`${item} is a great choice!`);
 
 // Step 3 - Subtype choice
 // Your code goes here
 
-if (orderItem == 1) {
+if (item == "Pizza") {
   let pizzaType = prompt(
-    `Which pizza do you wish to order today? Type the number that you'd like to order: 1/ Margarita, 2/ Peperoni, 3/ Potato`
+    `Which type of ${item} would you like? Type the number of the option you'd like to order:\n\n 1/ Margarita\n2/ Peperoni\n3/ Potato\n\n`
   );
+
   if (pizzaType == 1) {
-    alert("Margarita is a great choice!");
+    pizzaType = "Margarita";
   } else if (pizzaType == 2) {
-    alert("Peperoni is a great choice!");
+    pizzaType = "Peperoni";
   } else {
-    alert("Potato is a great choice!");
+    pizzaType = "Potato";
   }
-} else if (orderItem == 2) {
+
+  alert(
+    `${pizzaType} is a great choice! We'll get that ready for you shortly!`
+  );
+} else if (item == "Pasta") {
   let pastaType = prompt(
-    `Which pasta do you wish to order today? Type the number that you'd like to order: 1/ Cacio e Pepe, 2/ Carbonara, 3/ Tomato`
+    `Which type of ${item} would you like? Type the number of the option you'd like to order:\n\n 1/ Cacio e Pepe\n2/ Carbonara\n3/ Tomato\n\n`
   );
 
   if (pastaType == 1) {
-    alert("Cacio e Pepe is a great choice!");
+    pastaType = "Cacio e Pepe";
   } else if (pastaType == 2) {
-    alert("Carbonara is a great choice!");
+    pastaType = "Carbonara";
   } else {
-    alert("Tomoato is a great choice!");
+    pastaType = "Tomato";
   }
+
+  alert(
+    `${pastaType} is a great choice! We'll get that ready for you shortly!`
+  );
 } else {
   let saladType = prompt(
-    `Which salad do you wish to order today? Type the number that you'd like to order: 1/ Greek, 2/ Caesar, 3/ Green`
+    `Which type of ${item} would you like? Type the number of the option you'd like to order:\n\n 1/ Greek\n2/ Caesar\n3/ Green\n\n`
   );
 
   if (saladType == 1) {
-    alert("Greek is a great choice!");
-  } else if (saladType == 2) {
-    alert("Caesar is a great choice!");
+    saladType = "Greek";
+  } else if (pastaType == 2) {
+    saladType = "Caesar";
   } else {
-    alert("Green is a great choice!");
+    saladType = "Green";
   }
+
+  alert(
+    `${saladType} is a great choice! We'll get that ready for you shortly!`
+  );
 }
 
 // Step 4 - Age
